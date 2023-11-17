@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: rgb(15, 9, 43);
+}
+
+main {padding-bottom: 200px; overflow: hidden;}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+.light {
+    position: absolute;
+    z-index: -1;
+}
+
+.box-flex-full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilizando a barra de rolagem lateral */
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(11, 6, 30);
+    /* Cor de fundo da área de rastreamento da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(147, 53, 112);
+    /* Cor da barra de rolagem */
+    background-clip: content-box;
+    border-radius: 5px;
+    /* Borda arredondada da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(180, 64, 138);
+    /* Cor da barra de rolagem ao passar o mouse */
+}
+
+header {
+    display: flex;
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    background: rgb(15, 9, 43);
+}
+
+
+#countdown {
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    padding: 2px;
+    background: linear-gradient(90deg, #E84E9B 0%, #8A3AE2 100%);
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+#countdown div {
+    background-color: rgb(14, 12, 47);
+    padding: 8px 18px;
+    border-radius: 28px;
+}
+
+header a {
+    margin-right: 40px;
+    padding: 2px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #E84E9B 0%, #8A3AE2 100%);
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s;
+}
+
+header a:hover {
+    background: linear-gradient(90deg, #8A3AE2 0%, #E84E9B 100%);
+    transform: scale(1.1);
+}
+
+header a div {
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    border-radius: 28px;
+    background-color: rgb(14, 12, 47);
+}
+
+.header-fixed {
+    position: fixed;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apresentacao-principal {
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.apresentacao-scroll {
+    margin-top: 125px;
+}
+
+.apresentacao-principal h1 {
+    font-size: 90px;
+    line-height: 0.9;
+    margin-bottom: 30px;
+}
+
+.apresentacao-principal h4 {
+    font-size: 18px;
+}
+
+.apresentacao-principal img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.vsl {
+    margin-bottom: 140px;
+}
+
+.tickets-top {
+    position: relative;
+    height: 400px;
+}
+
+.tickets-top h2 {
+    width: fit-content;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.tickets-bottom {
+    height: 800px;
+    background-color: white;
+    padding-top: 420px;
+}
+
+.tickets-bottom p {
+    color: #86868e;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.tickets-bottom a {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #E84E9B 0%, #8A3AE2 100%);
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s;
+}
+
+.tickets-bottom a div {
+    display: flex;
+    align-items: center;
+    padding: 14px 36px;
+    border-radius: 33px;
+    background-color: transparent;
+}
+
+.tickets-bottom a:hover {
+    background: linear-gradient(90deg, #8A3AE2 0%, #E84E9B 100%);
+    transform: scale(1.1);
+}
+
+.tickets-container {
+    width: 350px;
+    position: absolute;
+    bottom: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tickets {
+    position: relative;
+    width: fit-content;
+}
+
+.tickets img {
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Aplica rotação específica para cada imagem */
+.tickets img:nth-child(1) {
+    transform: rotate(-20deg) translateX(-80%);
+    z-index: 2;
+}
+
+.tickets img:nth-child(3) {
+    transform: rotate(20deg) translateX(80%);
+    z-index: 2;
+}
+
+.pagamento {
+    margin-bottom: 140px;
+}
+
+.pay {
+    position: relative;
+    height: 200px;
+}
+
+.formas-pagamento {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagamento-seguro {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.pagamento-seguro h1 {
+    color: rgb(80, 80, 80);
+    font-weight: bolder;
+}
+
+.pagamento-seguro p {
+    color: #86868e;
+}
+
+.FAQ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.accordion-1 li {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+}
+
+.accordion-1 li p {
+    margin: 0px;
+    max-width: 90%;
+}
+
+.resposta {
+    color: rgb(180, 180, 180);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+
+.pergunta.ativo .resposta {
+    max-height: 600px;
+    animation: fade 1s ease-in-out;
+}
+
+.pergunta.ativo svg {
+    transform: rotate(180deg);
+}
+
+.pergunta-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    font-size: 22px;
+}
+
+svg {
+    margin-top: 10px;
+    fill: rgba(255, 255, 255, 0.7);
+    transition: transform 1s ease-in;
+}
+
+.accordion-1 {
+    width: 300px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+footer {
+    padding: 0 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    background-color: rgb(20, 20, 20);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+footer a:hover {
+    color: rgb(200, 200, 200);
+}
+
+@media (min-width: 820px) {
+    .accordion-1 {
+        width: 800px !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .accordion-1 {
+        width: 500px;
+    }
+}

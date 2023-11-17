@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tickets {
+            position: relative;
+            width: fit-content;
+        }
+
+        .tickets img {
+            position: absolute;
+            left: 50%;
+            height: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Aplica rotação específica para cada imagem */
+        .tickets img:nth-child(1) {
+            transform: rotate(-20deg) translateX(-80%);
+            z-index: 2;
+        }
+
+        .tickets img:nth-child(3) {
+            transform: rotate(20deg) translateX(80%);
+            z-index: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="tickets">
+        <img src="./img/ticket2.png" alt="" style="z-index: 2;">
+        <img src="./img/ticket1.png" alt="" style="z-index: 3;">
+        <img src="./img/ticket3.png" alt="" style="z-index: 2;">
+    </div>
+
+</body>
+
+</html>
