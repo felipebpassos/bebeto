@@ -21,7 +21,7 @@ const interval = setInterval(function () {
     const formattedSeconds = seconds.toString().padStart(2, '0');
 
     // Atualiza o elemento HTML
-    document.getElementById('countdown').innerHTML = `<div>${formattedDays} DIAS : ${formattedHours} HORAS : ${formattedMinutes} MIN : ${formattedSeconds} SEG</div>`;
+    document.getElementById('countdown').innerHTML = `<div>${formattedDays}<span>DIAS</span></div> : <div>${formattedHours}<span>HORAS</span></div> : <div>${formattedMinutes}<span>MIN</span></div> : <div>${formattedSeconds}<span>SEG</span></div>`;
 
     // Se a data alvo for atingida, limpa o intervalo
     if (difference < 0) {
