@@ -42,6 +42,16 @@ section a:hover {
     transform: scale(1.1);
 }
 
+.sessao-titulo {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 .fade-in-element {
     opacity: 0;
     transition: opacity 2.5s ease-in-out;
@@ -170,6 +180,7 @@ header a div {
 }
 
 .header-fixed {
+    z-index: 999;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -214,7 +225,7 @@ header a div {
 }
 
 .descricao {
-    height: 350px;
+    height: 450px;
     text-align: center;
     padding: 50px 0;
 }
@@ -222,15 +233,78 @@ header a div {
 .descricao p {
     max-width: 600px;
     color: rgb(231, 231, 231);
-}
-
-.palestrantes {
-    height: 600px;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
 .vsl {
-    margin-bottom: 140px;
     position: relative;
+    margin-bottom: 140px;
+}
+
+.palestrantes {
+    position: relative;
+    height: 850px;
+}
+
+.slides {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    margin: 0 5px;
+    /* Aumente o espaçamento entre os botões */
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.neighbor {
+    height: 6px;
+    /* Tamanho para dots vizinhos */
+    width: 6px;
+    /* Tamanho para dots vizinhos */
+}
+
+.atual {
+    height: 8px;
+    width: 8px;
+    background-color: rgb(120, 120, 120);
+    /* Tamanho maior para o botão ativo */
+}
+
+.schedule {
+    position: relative;
+    padding-top: 100px;
+    background-image: url('../img/auditorio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    margin-bottom: 140px;
+}
+
+#restart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    z-index: 999;
+    right: 10%;
+    top: 21%;
+}
+
+#restart img {
+    width: 100%;
+    object-fit: cover;
 }
 
 #mute {
@@ -241,9 +315,9 @@ header a div {
     height: 30px;
     background: none;
     border: none;
-    z-index: 999;
+    z-index: 2;
     right: 4%;
-    top: 50px;
+    top: 8%;
 }
 
 #mute img {
@@ -263,7 +337,7 @@ header a div {
 }
 
 .tickets-bottom {
-    height: 800px;
+    height: 750px;
     background-color: white;
     padding-top: 420px;
 }
@@ -271,10 +345,10 @@ header a div {
 .tickets-bottom p {
     color: #86868e;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .tickets-container {
@@ -335,10 +409,12 @@ header a div {
 .pagamento-seguro h1 {
     color: rgb(80, 80, 80);
     font-weight: bolder;
+    margin-bottom: 30px;
 }
 
 .pagamento-seguro p {
     color: #86868e;
+    text-align: justify;
 }
 
 .FAQ {
@@ -480,7 +556,7 @@ footer a:hover {
         padding-top: 350px;
         height: 700px;
     }
-    
+
 }
 
 @media (max-width: 680px) {
@@ -498,9 +574,16 @@ footer a:hover {
         display: block;
     }
 
-    header #countdown {margin: auto;}
+    header #countdown {
+        margin: auto;
+    }
 
-    header a {width: fit-content; display: block; margin: auto; margin-top: 60px;}
+    header a {
+        width: fit-content;
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 540px) {

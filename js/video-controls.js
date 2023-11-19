@@ -1,5 +1,10 @@
 const video = document.getElementById("vsl");
 const muteButton = document.getElementById("mute");
+const restartButton = document.getElementById("restart");
+
+restartButton.addEventListener("click", function () {
+    video.currentTime = 0; // Define o tempo de reprodução para 0 (início)
+});
 
 muteButton.addEventListener("click", function () {
     if (video.muted) {

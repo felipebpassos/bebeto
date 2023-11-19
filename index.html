@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="#########################################################################">
+    <meta name="description" content="O evento de investimentos mais completo de
+    Aracaju! Um encontro único com grandes nomes da área, repleto de insights valiosos e oportunidades de
+    networking exclusivas. Mostraremos a você que investir é para todo mundo.">
     <title>Todo Mundo Pode Investir</title>
 
-    <link rel="icon" href="./img/icon.ico">
+    <link rel="icon" href="./img/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -43,9 +45,12 @@
         <!-- Seção de Descrição -->
         <section class="descricao">
 
-            <p style="margin: auto; margin-bottom: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
+            <h2 style="margin-bottom: 20px;">Chegou a hora!</h2>
+            <p style="margin: auto; margin-bottom: 60px;">O evento de investimentos mais completo de Aracaju! Neste
+                encontro único,
+                você aprenderá renda fixa, fundos imobiliários, milhas aéreas e tudo o que você precisará para construir
+                uma vida financeira sólida, focada no longo prazo.
+                Acreditamos que investir é para todo mundo.</p>
             <a style="margin-top: 30px; margin-bottom: 20px;" href="https://pay.kiwify.com.br/nuZf5FQ">
                 <div><img src="./img/two-movie-tickets.png" height="18" style="margin-right: 10px;" alt="">Garanta sua
                     Vaga</div>
@@ -54,33 +59,157 @@
 
         </section>
 
-        <!-- Seção de Programação e Conteúdo -->
-        <section class="schedule"></section>
-
         <!-- Seção do VSL -->
         <section class="vsl">
             <div class="fade-top"></div>
             <div class="fade-bottom"></div>
-            <video id="vsl" class="K8MSra" role="presentation" crossorigin="anonymous" playsinline=""
-                preload="auto" muted="" loop="" tabindex="-1" autoplay=""
+            <video id="vsl" class="K8MSra" role="presentation" crossorigin="anonymous" playsinline="" preload="auto"
+                muted="" loop="" tabindex="-1" autoplay=""
                 src="https://video.wixstatic.com/video/488cf3_2d98b5c9d5d5451c9cddbe6b25dc4ee1/480p/mp4/file.mp4"
                 style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>
-            <button id="mute" class="unmute"><img src="./img/mute.png"
-                    alt=""></button>
+            <button id="restart" class="restart" style="display: none;"><img src="./img/restart.png" alt=""></button>
+            <button id="mute" class="unmute"><img src="./img/mute.png" alt=""></button>
         </section>
 
         <!-- Seção de Palestrantes -->
-        <section class="palestrantes">
+        <section class="palestrantes fade-in-element">
 
+            <div class="box-flex-full">
+                <div class="sessao-titulo">Palestrantes</div>
+            </div>
             <h2 style="width: 100%; text-align:center; margin-bottom: 50px;">Conheça os <span
                     style="color: #8A3AE2; font-weight: bold;">Palestrantes</span></h2>
+
+            <div class="slides">
+                <img src="./img/bebeto-light.png" alt="Roberto Brandini png">
+            </div>
+
+            <div class="slides">
+                <img src="./img/mayara-light.png" alt="Mayara png">
+            </div>
+
+            <div class="slides">
+                <img src="./img/danilo-light.png" alt="Danilo png">
+            </div>
+
+            <div class="slides">
+                <img src="./img/winicius-light.png" alt="Winicius png">
+            </div>
+
+            <div style="display: flex; align-items: center; position: absolute; bottom: 150px; left: 50%; width: fit-content; transform: translateX(-50%);">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <!-- Adicione mais pontos aqui conforme necessário -->
+            </div>
+
+        </section>
+
+        <!-- Seção de Programação e Conteúdo -->
+        <section class="schedule fade-in-element">
+
+            <!-- Overlay transparente -->
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 12, 47, 0.8);">
+            </div>
+
+            <div style="z-index: 2; position: absolute; left: 50%; transform: translateX(-50%);">
+                <div class="box-flex-full">
+                    <div class="sessao-titulo">Programação</div>
+                </div>
+                <h2 style="width: 100%; text-align:center; margin-bottom: 50px;">Confira a <span
+                        style="color: #8A3AE2; font-weight: bold;">Programação</span></h2>
+                        <ul id="lista-perguntas" class="accordion-1">
+                            <div class="pergunta">
+                                <li>
+                                    <div class="pergunta-header">
+                                        <p>O que é a Todo Mundo Pode Investir?</p>
+                                        <svg width="18" height="12" viewBox="0 0 42 25">
+                                            <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
+                                                stroke-linecap="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="resposta">
+                                        <p>A Todo Mundo Pode Investir é o evento de investimentos mais completo de
+                                            Aracaju! Um encontro único com grandes nomes da área, repleto de insights valiosos e
+                                            oportunidades de
+                                            networking exclusivas. Mostraremos a você que investir é para todo mundo.</p><br>
+                                    </div>
+                                </li>
+        
+                            </div>
+                            <div class="pergunta">
+                                <li>
+                                    <div class="pergunta-header">
+                                        <p>O que acontece após o pagamento?</p>
+                                        <svg width="18" height="12" viewBox="0 0 42 25">
+                                            <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
+                                                stroke-linecap="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="resposta">
+                                        <p>Após clicar no botão "Garanta sua Vaga", você será direcionado(a) para a página de
+                                            checkout da Kiwify
+                                            onde deverá inserir os dados de pagamento em cartão, boleto ou Pix.</p><br>
+                                        <p>Assim que o pagamento for confirmado pelo banco você receberá um e-mail com uma
+                                            mensagem
+                                            de
+                                            confirmação, garantindo sua entrada na Todo Mundo Pode Investir. Pronto, depois é só
+                                            aproveitar!
+                                        </p>
+                                        <br>
+                                        <p>Caso tenha qualquer dúvida é só escrever pra gente: (79) 9 8135-8136</p>
+                                        <br>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="pergunta">
+                                <li>
+                                    <div class="pergunta-header">
+                                        <p>Preciso ter muito dinheiro para querer investir?</p>
+                                        <svg width="18" height="12" viewBox="0 0 42 25">
+                                            <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="resposta">
+                                        <p>Não! No Todo Mundo Pode Investir, exploramos muito essa questão. Você terá todo
+                                            suporte
+                                            especializado dentro da plataforma. Criatividade se aprende e se exercita. Neste
+                                            curso, você terá uma
+                                            ótima base e bons exemplos para aplicar no seu dia a dia.</p>
+                                        <br>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="pergunta">
+                                <li>
+                                    <div class="pergunta-header">
+                                        <p>Preciso ter conta em algum banco específico?</p>
+                                        <svg width="18" height="12" viewBox="0 0 42 25">
+                                            <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="resposta">
+                                        <p></p>
+                                        <br>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+            </div>
 
         </section>
 
         <!-- Seção de Tickets -->
         <section class="tickets-section">
             <div class="tickets-top">
-                <h2>Temos um lugar especial para você!</h2>
+                <h2 style="text-align: center;">Temos um lugar especial para você!</h2>
                 <div class="tickets-container">
                     <div class="tickets">
                         <img src="./img/ticket2.png" alt="" style="z-index: 2;">
@@ -90,8 +219,7 @@
                 </div>
             </div>
             <div class="tickets-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
+                <p>O evento de investimentos mais completo de Aracaju</p>
 
                 <a href="https://pay.kiwify.com.br/nuZf5FQ">
                     <div>Garanta seu Ingresso</div>
@@ -105,8 +233,8 @@
         <!-- Seção de Pagamento -->
         <section class="pagamento">
             <div class="pay">
-                <h1>Aproveite esta<br>Oportunidade Imperdível</h1>
-                <h3 style="margin-bottom: 50px; color: rgb(185, 185, 185);">Vagas LIMITADAS (100 pessoas!)</h3>
+                <h1>Oportunidade Imperdível</h1>
+                <h3 style="margin-bottom: 50px; color: rgb(185, 185, 185);">Vagas LIMITADAS (100 pessoas)</h3>
                 <h5 style="margin-bottom: 50px;">por apenas</h5>
                 <span style="font-size: 60px; font-family: 'Bai Jamjuree', sans-serif;">R$ 147,00</span>
                 <a style="margin-top: 30px;" href="https://pay.kiwify.com.br/nuZf5FQ">
@@ -119,12 +247,16 @@
                 <div class="container" style="margin: auto;">
                     <div class="row">
                         <div class="col-md-3" style="display: flex; justify-content: center;">
-                            <img src="./img/Verify_Payment.png" height="200" alt="Pagamento Seguro">
+                            <img src="./img/seguro.jpg" height="200" alt="Pagamento Seguro">
                         </div>
-                        <div class="col-md-6" style="display: flex; justify-content: center;">
+                        <div class="col-md-8" style="display: flex; justify-content: center;">
                             <div class="texto">
                                 <h1>PAGAMENTO SEGURO</h1>
-                                <p>Texto sobre pagamento seguro com o checkout da Kiwify.</p>
+                                <p>No Todo Mundo Pode Investir você tem tranquilidade e segurança ao adquirir seu
+                                    ingresso. Com a Kiwify, seus dados financeiros estão resguardados por protocolos
+                                    avançados de segurança, seguindo a lei Lei nº 13.709 (Lei Geral de Proteção de Dados
+                                    - LGPD), que estabelece um conjunto de regras para coleta, tratamento, armazenamento
+                                    e compartilhamento de dados pessoais.</p>
                             </div>
                         </div>
                     </div>
@@ -149,14 +281,17 @@
                     <div class="pergunta">
                         <li>
                             <div class="pergunta-header">
-                                <p>O que é a Todo Mundo Pode Investir?</p>
+                                <p>🌏 O que é a Todo Mundo Pode Investir?</p>
                                 <svg width="18" height="12" viewBox="0 0 42 25">
                                     <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
                                         stroke-linecap="round"></path>
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>O melhor curso que há.</p><br>
+                                <p>A Todo Mundo Pode Investir é o evento de investimentos mais completo de
+                                    Aracaju! Um encontro único com grandes nomes da área, repleto de insights valiosos e
+                                    oportunidades de
+                                    networking exclusivas. Mostraremos a você que investir é para todo mundo.</p><br>
                             </div>
                         </li>
 
@@ -164,22 +299,24 @@
                     <div class="pergunta">
                         <li>
                             <div class="pergunta-header">
-                                <p>O que acontece após o pagamento?</p>
+                                <p>🎟️ O que acontece após o pagamento?</p>
                                 <svg width="18" height="12" viewBox="0 0 42 25">
                                     <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
                                         stroke-linecap="round"></path>
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Após clicar no botão "Se Inscrever", você será direcionado(a) para a página da Kiwify
+                                <p>Após clicar no botão "Garanta sua Vaga", você será direcionado(a) para a página de
+                                    checkout da Kiwify
                                     onde deverá inserir os dados de pagamento em cartão, boleto ou Pix.</p><br>
                                 <p>Assim que o pagamento for confirmado pelo banco você receberá um e-mail com uma
                                     mensagem
                                     de
-                                    boas-vindas e com os dados de acesso da Mentoria. Pronto, depois é só aproveitar!
+                                    confirmação, garantindo sua entrada na Todo Mundo Pode Investir. Pronto, depois é só
+                                    aproveitar!
                                 </p>
                                 <br>
-                                <p>Caso tenha qualquer dúvida é só escrever pra gente: contato@paidorec.com</p>
+                                <p>Caso tenha qualquer dúvida é só escrever pra gente: (79) 9 8135-8136</p>
                                 <br>
                             </div>
                         </li>
@@ -187,7 +324,7 @@
                     <div class="pergunta">
                         <li>
                             <div class="pergunta-header">
-                                <p>Preciso ter muito dinheiro para querer investir?</p>
+                                <p>💰 Preciso ter muito dinheiro para querer investir?</p>
                                 <svg width="18" height="12" viewBox="0 0 42 25">
                                     <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
                                         stroke-linecap="round">
@@ -195,13 +332,11 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Com certeza! Exploramos muito essa questão no treinamento. Você também terá todo
+                                <p>Não! No Todo Mundo Pode Investir, exploramos muito essa questão. Você terá todo
                                     suporte
-                                    especializado dentro da plataforma. Criatividade se aprende e se exercita. Nesse
-                                    curso
-                                    você
-                                    vai
-                                    ter uma ótima base e bons exemplos para aplicar no seu dia dia.</p>
+                                    especializado dentro da plataforma. Criatividade se aprende e se exercita. Neste
+                                    curso, você terá uma
+                                    ótima base e bons exemplos para aplicar no seu dia a dia.</p>
                                 <br>
                             </div>
                         </li>
@@ -209,7 +344,7 @@
                     <div class="pergunta">
                         <li>
                             <div class="pergunta-header">
-                                <p>Preciso ter um celular top de linha para aplica o método?</p>
+                                <p>🏦 Preciso ter conta em algum banco específico?</p>
                                 <svg width="18" height="12" viewBox="0 0 42 25">
                                     <path d="M3 3L21 21L39 3" stroke="transparent" stroke-width="7"
                                         stroke-linecap="round">
@@ -217,12 +352,7 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Na verdade não. Você vai ver que as dicas servem para qualquer modelo, não deixe isso
-                                    limitar
-                                    seu
-                                    conteúdo. Nossas aulas foram formatadas para atender as necessidades de criação, nos
-                                    preocupamos
-                                    em validar as técnicas em diversos modelos de celular e sistemas operacionais.</p>
+                                <p></p>
                                 <br>
                             </div>
                         </li>
@@ -241,7 +371,8 @@
 
     <footer>
         <div class="copyright">
-            &copy; 2023, Pai do Rec | Desenvolvido por <a href="https://www.instagram.com/simplifyweb/" target="_blank">Simplify Web</a>
+            &copy; 2023, Todo Mundo Pode Investir | Desenvolvido por <a href="https://www.instagram.com/simplifyweb/"
+                target="_blank">Simplify Web</a>
         </div>
     </footer>
 
@@ -249,10 +380,11 @@
 
     <script src="./js/tempo.js"></script>
     <script src="./js/header-effect.js"></script>
-    <script src="./js/video-controls.js"></script>
-    <script src="./js/tickets-hover.js"></script>
-    <script src="./js/accordion.js"></script>
     <script src="./js/fade-in-element.js"></script>
+    <script src="./js/video-controls.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/tickets-hover.js"></script>
+    <script src="./js/slide.js"></script>
 
 </body>
 
