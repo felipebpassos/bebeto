@@ -31,6 +31,7 @@ function showSlides(n) {
 
     for (i = 0; i < slides.length; i++) {
         slides[i].style.opacity = 0;
+        slides[i].style.zIndex = 1;
     }
 
     // Remove a classe "neighbor" de todos os dots
@@ -40,7 +41,9 @@ function showSlides(n) {
         dots[i].style.display = "none"; // Oculta todos os dots
     }
 
+
     slides[slideIndex - 1].style.opacity = 1;
+    slides[slideIndex - 1].style.zIndex = 10;
     dots[slideIndex - 1].className += " atual";
     dots[slideIndex - 1].style.display = "inline-block"; // Mostra o dot ativo
 
