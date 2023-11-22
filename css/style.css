@@ -255,6 +255,8 @@ header a div {
     transition: opacity 1.5s ease-in-out;
 }
 
+.slides h5 {margin-bottom: 0;}
+
 .palestrante {
     position: relative;
 }
@@ -558,6 +560,18 @@ footer a:hover {
     }
 }
 
+@media (max-width: 819px) {
+    .schedule {
+        height: 1050px;
+    }
+}
+
+@media (max-width: 499px) {
+    .schedule {
+        height: 1250px;
+    }
+}
+
 @media (max-width: 780px) {
 
     .tickets-container {
@@ -575,6 +589,15 @@ footer a:hover {
     .tickets-bottom {
         padding-top: 350px;
         height: 700px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .pagamento-seguro h1 {
+        text-align: center;
+        margin-top: 30px;
     }
 
 }
@@ -604,6 +627,8 @@ footer a:hover {
         margin: auto;
         margin-top: 60px;
     }
+
+    .vsl {margin-bottom: 100px;}
 }
 
 @media (max-width: 540px) {
@@ -624,4 +649,8 @@ footer a:hover {
     .accordion-1 {
         width: 500px;
     }
+}
+
+@media (max-width: 480px) {
+    .vsl {margin-bottom: 60px;}
 }
